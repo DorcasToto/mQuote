@@ -15,7 +15,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
+                <form (ngSubmit)="submitQuote()" #goalForm='ngForm'>
                     <div class="form-group">
                         <label for="name">Full name</label>
                         <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.user" name="name"
@@ -26,24 +26,24 @@
                     </div>
                     <div class="form-group">
                         <label for="description">Author</label>
-                        <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.author"
-                            name="author" #description="ngModel" required></textarea>
-                        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                        <input type="text" class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.author"
+                            name="author" #author="ngModel" required>
+                        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                             <p>Author is required</p>
                         </div>
                     </div>
                     <div class="form-group">
 
-                        <label for="complete">Quote</label>
-                        <input type='date' id="quote" [(ngModel)]="newQuote.quote" name="quote"
-                            #completeDate="ngModel" required>
-                        <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                            <p>Date is required</p>
+                        <label for="quote">Quote</label>
+                        <textarea class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote"
+                            #quote="ngModel" required></textarea>
+                        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                            <p>quote is required</p>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" (click)='resetFields()'>Clear</button>
-                        <button type="submit" class="btn btn-primary">Add Goal</button>
+                        <button type="button" class="btn btn-secondary">Clear</button>
+                        <button type="submit" class="btn btn-primary">Add Quote</button>
                     </div>
                 </form>
             </div>
