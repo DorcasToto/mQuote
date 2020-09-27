@@ -8,26 +8,28 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <h2 class="text-center mt-3">mQuote</h2>
         <p class="text-center">Welcome to mQuote. Well, you can either create your own Quote or View the best Quote.</p>
         <hr>
-        <app-create-quote></app-create-quote>
-        <div class="row pt-5">
-            <div class="col-md-3 mb-4 d-flex align-items-stretch" *ngFor="let mQuote of mQuotes" height=18px>
+        <app-create-quote (addQuote)="newQuote($event)"></app-create-quote>
+        <div class="row pt-5" *ngFor="let mQuote of mQuotes" height=18px>
+            <div class="col-sm">
                 <div class="card testimonial-card">
                     <div class="card-body">
                         <h4 class="card-title text-secondary text-uppercase">{{mQuote.author}}</h4>
                         <hr>
                         <p><i class="fas fa-quote-left pr-1"></i>{{mQuote.quote}}<i class="fas fa-quote-right pl-1"></i>
                         </p>
-                        <span >Submitted By: <p class="text-default">{{mQuote.user}}</p></span>
+                        <span>Submitted By: <p class="text-default">{{mQuote.user}}</p></span>
                         <div class="row ">
-                            <i class="far fa-thumbs-up h1 pr-4"></i>
-                            <i class="far fa-thumbs-down h1"></i>
+                            <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(mQuote)'></i>
+                            <i class="far fa-thumbs-down h1" (click)='downVote(mQuote)'></i>
                             <span class="delete" (click)='deleteGoal(true)' aria-hidden="true"><i
                                     class="fa fa-trash"></i></span>
                         </div>
+                        <span class="pr-5">{{mQuote.upvotes}}</span>
+                        <span class="pr-5">{{mQuote.downvotes}}</span>
 
                     </div>
                 </div>

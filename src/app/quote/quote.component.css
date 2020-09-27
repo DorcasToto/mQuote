@@ -14,3 +14,7 @@ h2{
     font-size: 70px;
     font-family: 'Merienda', cursive;
 }
+.fa-thumbs-up,.fa-thumbs-down{
+  
+    cursor:pointer;
+  }

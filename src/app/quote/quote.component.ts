@@ -16,6 +16,34 @@ export class QuoteComponent implements OnInit {
 
   ];
 
+
+  isComplete = true;
+  numberOfGoals = 0;
+  upvotes = 0;
+  downvotes = 0;
+
+
+  getCurrentId() {
+    return this.mQuotes.length + 1
+  }
+
+  newQuote(quote) {
+    quote.id = this.getCurrentId();
+    quote.name = quote.name;
+    quote.quote = quote.quote;
+    quote.author = quote.author;
+    quote.date = new Date(quote.date)
+    this.mQuotes.unshift(quote)
+  }
+
+  upVote(quote) {
+    quote.upvotes = quote.upvotes + 1;
+
+  }
+  downVote(quote) {
+    quote.downvotes = quote.downvotes + 1;
+
+  }
   constructor() { }
 
   ngOnInit(): void {

@@ -7,12 +7,14 @@ import { QuoteComponent } from './quote/quote.component';
 import { CreateQuoteComponent } from './create-quote/create-quote.component';
 
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    CreateQuoteComponent
+    CreateQuoteComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
