@@ -18,9 +18,15 @@ export class QuoteComponent implements OnInit {
 
 
   isComplete = true;
-  numberOfGoals = 0;
   upvotes = 0;
   downvotes = 0;
+
+  mostVotes = 0;
+  bestAuthor: string;
+  bestQuote: string;
+  bestUser: string;
+  lowVotes: number;
+  date: any;
 
 
   getCurrentId() {
@@ -53,6 +59,24 @@ export class QuoteComponent implements OnInit {
         this.mQuotes.splice(index, 1)
       }
     }
+  }
+
+  bestmQuote() {
+
+    this.mostVotes = 0;
+    // tslint:disable-next-line: prefer-for-of
+    for (let i = 0; i < this.mQuotes.length; i++) {
+      if (this.mQuotes[i].upvotes > this.mostVotes) {
+        this.mostVotes = this.mQuotes[i].upvotes;
+        this.bestAuthor = this.mQuotes[i].author;
+        this.bestQuote = this.mQuotes[i].quote;
+        this.bestUser = this.mQuotes[i].user;
+        this.lowVotes = this.mQuotes[i].downvotes;
+        this.date = this.mQuotes[i].date;
+      }
+    }
+
+
   }
   constructor() { }
 
