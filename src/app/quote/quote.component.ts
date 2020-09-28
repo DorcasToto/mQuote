@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 
@@ -21,7 +23,7 @@ export class QuoteComponent implements OnInit {
   upvotes = 0;
   downvotes = 0;
 
-  mostVotes = 0;
+  bestVotes = 0;
   bestAuthor: string;
   bestQuote: string;
   bestUser: string;
@@ -29,14 +31,9 @@ export class QuoteComponent implements OnInit {
   date: any;
 
 
-  getCurrentId() {
-    return this.mQuotes.length + 1
-  }
-
   newQuote(quote) {
-    quote.id = this.getCurrentId();
     quote.name = quote.name;
-    quote.quote = quote.quote;
+    quote.quote= quote.quote;
     quote.author = quote.author;
     quote.date = new Date(quote.date)
     this.mQuotes.unshift(quote)
@@ -62,12 +59,10 @@ export class QuoteComponent implements OnInit {
   }
 
   bestmQuote() {
-
-    this.mostVotes = 0;
-    // tslint:disable-next-line: prefer-for-of
+    this.bestVotes = 0;
     for (let i = 0; i < this.mQuotes.length; i++) {
-      if (this.mQuotes[i].upvotes > this.mostVotes) {
-        this.mostVotes = this.mQuotes[i].upvotes;
+      if (this.mQuotes[i].upvotes > this.bestVotes) {
+        this.bestVotes = this.mQuotes[i].upvotes;
         this.bestAuthor = this.mQuotes[i].author;
         this.bestQuote = this.mQuotes[i].quote;
         this.bestUser = this.mQuotes[i].user;
@@ -75,8 +70,6 @@ export class QuoteComponent implements OnInit {
         this.date = this.mQuotes[i].date;
       }
     }
-
-
   }
   constructor() { }
 

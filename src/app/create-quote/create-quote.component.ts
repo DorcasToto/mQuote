@@ -18,6 +18,12 @@ export class CreateQuoteComponent implements OnInit {
     this.addQuote.emit(this.newQuote);
 
   }
+  resetFields() {
+    this.newGoal.name = '';
+    this.newGoal.description = '';
+    this.newGoal.completeDate = new Date();
+
+  }
 
   constructor() { }
 

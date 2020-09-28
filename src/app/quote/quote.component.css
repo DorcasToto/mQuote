@@ -18,3 +18,7 @@ h2{
   
     cursor:pointer;
   }
+  p,.bestmQuote{
+    font-family: 'Merienda', cursive;
+    font-size:20px;
+  }

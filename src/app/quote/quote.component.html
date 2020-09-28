@@ -13,6 +13,13 @@
         <p class="text-center">Welcome to mQuote. Well, you can either create your own Quote or View the best Quote.</p>
         <hr>
         <app-create-quote (addQuote)="newQuote($event)"></app-create-quote>
+        <button type="button" class="btn btn-default" (click)="bestmQuote()">
+            View Best Quote
+        </button>
+        <div class="bestmQuote deep-orange-text">
+            {{bestQuote}}
+
+        </div>
         <div class="row pt-5" *ngFor="let mQuote of mQuotes;let mIndex =index" height=18px>
             <div class="col-sm">
                 <div class="card testimonial-card">
@@ -21,9 +28,9 @@
                         <hr>
                         <p><i class="fas fa-quote-left pr-1"></i>{{mQuote.quote}}<i class="fas fa-quote-right pl-1"></i>
                         </p>
-                        <span class="row">Submitted By: <p class="deep-orange-text">{{mQuote.user}}
-                            </p>
-                            <h5 class="pl-5">{{mQuote.date |dateCount}} days ago</h5>
+                        <span class="row" >Submitted By: <h5 class="deep-orange-text pl-3">{{mQuote.user}}
+                                </h5>
+                                <h5 class="pl-5">{{mQuote.date |dateCount}} days ago</h5>
                         </span>
                         <div class="row ">
                             <i class="far fa-thumbs-up h1 pr-4" (click)='upVote(mQuote)'></i>
