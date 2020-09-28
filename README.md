@@ -39,5 +39,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## License
 
-* LICENSED UNDER [MIT] [https://github.com/DorcasToto/mQuote/blob/master/LICENSE)
+[MIT] [https://github.com/DorcasToto/mQuote/blob/master/LICENSE.md)
+
+## Collaborator
+
  © [Dorcas Cherono](https://github.com/DorcasToto)
