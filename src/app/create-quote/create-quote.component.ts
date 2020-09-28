@@ -19,9 +19,9 @@ export class CreateQuoteComponent implements OnInit {
 
   }
   resetFields() {
-    this.newGoal.name = '';
-    this.newGoal.description = '';
-    this.newGoal.completeDate = new Date();
+    this.newQuote.author = '';
+    this.newQuote.quote = '';
+    this.newQuote.user = '';
 
   }
 
