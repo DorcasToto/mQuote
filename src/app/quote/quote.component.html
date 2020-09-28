@@ -16,6 +16,9 @@
         <button type="button" class="btn btn-default" (click)="bestmQuote()">
             View Best Quote
         </button>
+        <div class="alert alert-danger">
+            <p>Like to View the best Quote!</p>
+        </div>
         <div *ngIf='bestQuote'>
             <div class="row pt-5 ">
                 <div class="col-sm">
@@ -33,7 +36,7 @@
                             <div class="row ">
                                 <i class="far fa-thumbs-up h1 pr-4"></i>
                                 <i class="far fa-thumbs-down h1"></i>
-                              
+
                             </div>
                             <span class="pr-5">{{bestVotes}}</span>
                             <span class="pr-5">{{lowVotes}}</span>

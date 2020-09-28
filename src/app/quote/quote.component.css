@@ -22,6 +22,9 @@ h2{
     font-family: 'Merienda', cursive;
     font-size:20px;
   }
-.bestQ{
-
+.fa-thumbs-up:hover{
+color: blue;
+}
+.fa-thumbs-down:hover{
+  color: red;
 }
