@@ -13,9 +13,13 @@ An angular application where users can create quotes and have those quotes voted
 3. Delete a quote
 4. See the number of upvotes and number of downvotes for each quote.
 
+## Figma design
+
+ Check through my figma design [here](https://www.figma.com/file/aM538jsyiIxVEZVeMkICxe/mQuote?node-id=0%3A1)
+
 ## Live Application
 
-You can view the live application using this [link] (https://dorcastoto.github.io/mQuote/) hosted by Github
+You can view the live application using this [link](https://dorcastoto.github.io/mQuote/) hosted by Github
 
 ## Development server
 

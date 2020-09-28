@@ -59,7 +59,6 @@ export class QuoteComponent implements OnInit {
   }
 
   bestmQuote() {
-    this.bestVotes = 0;
     for (let i = 0; i < this.mQuotes.length; i++) {
       if (this.mQuotes[i].upvotes > this.bestVotes) {
         this.bestVotes = this.mQuotes[i].upvotes;
