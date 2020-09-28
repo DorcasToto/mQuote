@@ -15,7 +15,10 @@ An angular application where users can create quotes and have those quotes voted
 
 ## Figma design
 
- Check through my figma design [here](https://www.figma.com/file/aM538jsyiIxVEZVeMkICxe/mQuote?node-id=0%3A1)
+ Check through my figma design [here](https://www.figma.com/file/aM538jsyiIxVEZVeMkICxe/mQuote?node-id=0%3A1). It contains two pages.
+ 1. Landing page.
+ 2. Create Quote page.
+
 
 ## Live Application
 
