@@ -1,6 +1,5 @@
-Copyright (c) [Bike Repairs]( https://hamsoace.github.io/Bikes-R-Us/) <info@bikerepairs.co.ke>
 
-Project Url:   https://github.com/hamsoace/Bikes-R-Us.git
+Project Url:   https://github.com/DorcasToto/mQuote.git
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
