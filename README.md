@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
+## Description
+
+An angular application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
+## Features
+
+1. Create a new quote.
+2. Upvote or downvote a quote.
+3. Delete a quote
+4. See the number of upvotes and number of downvotes for each quote.
+
+## Live Application
+
+You can view the live application using this [link] (https://dorcastoto.github.io/mQuote/) hosted by Github
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -22,6 +37,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* LICENSED UNDER  [![License: MIT]()](licence)
