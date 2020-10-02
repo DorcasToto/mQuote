@@ -8,13 +8,15 @@ import { CreateQuoteComponent } from './create-quote/create-quote.component';
 
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightBestQuoteDirective } from './highlight-best-quote.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     CreateQuoteComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightBestQuoteDirective,
   ],
   imports: [
     BrowserModule,
